@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="create-trip">
+    <form>
+      <h1>Create Trip</h1>
+      <div class="input">
+        <div class="location">
+          <mat-form-field appearance="outline">
+            <mat-label>Enter your Location</mat-label>
+            <input matInput placeholder="pat@example.com" [formControl]="location" required>
+            <mat-error *ngIf="location.invalid">{{getErrorLoc()}}</mat-error>
+          </mat-form-field>
+        </div>
+        <div class="check">
+          <mat-form-field appearance="outline">
+            <mat-label>Check in</mat-label>
+            <input matInput placeholder="pat@example.com" [formControl]="checkin" required>
+            <mat-error *ngIf="checkin.invalid">{{getErrorIn()}}</mat-error>
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>check out</mat-label>
+            <input matInput placeholder="pat@example.com" [formControl]="checkout" required>
+            <mat-error *ngIf="checkout.invalid">{{getErrorOut()}}</mat-error>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Choose a date</mat-label>
+            <input matInput [matDatepicker]="picker">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        </div>
+        <div class="travel">
+          <mat-form-field appearance="outline">
+            <mat-label>Travellers</mat-label>
+            <input matInput placeholder="pat@example.com" [formControl]="traveller" required>
+            <mat-error *ngIf="traveller.invalid">{{getErrorTrav()}}</mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="button">
+        <a mat-button href="#">Create Trip</a>
+      </div>
+    </form>
+  </div>
+  <img src="assets/create-trip.png">
+</div>

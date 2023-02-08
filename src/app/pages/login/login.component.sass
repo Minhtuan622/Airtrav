@@ -1,0 +1,76 @@
+@import src/assets/color
+.form-login
+  width: 100vw
+  height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+  .form-body
+    width: 460px
+    padding: 50px 10px 10px 10px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    border: 0.5px solid $gray-5
+    box-shadow: 0px 20px 60px -6px rgba(40, 40, 40, 0.08)
+    border-radius: 2rem
+    .form-content
+      width: 375px
+      .form-title
+        text-align: center
+        h1
+          font-weight: 600
+          font-size: 30px
+          line-height: 1.5
+        p
+          font-weight: 400
+          font-size: 18px
+          line-height: 1.5
+          margin-block: 20px
+      .form-signin
+        display: flex
+        justify-content: center
+        .facebook, .google, .twitter
+          width: 110px
+          height: 45px
+          margin: 10px
+          display: flex
+          justify-content: center
+          align-items: center
+          border: 1px solid $gray-5
+          border-radius: 1rem
+          cursor: pointer
+      .form-subtitle
+        position: relative
+        text-align: center
+        margin-block: 25px
+      .form-subtitle:before
+        content: ""
+        position: absolute
+        height: 100%
+        width: 100%
+        top: 0
+        left: 0
+      form
+        mat-form-field
+          width: 100%
+          button
+            outline: none
+            border: none
+            background-color: white
+        .form-footer
+          display: flex
+          justify-content: space-between
+      a.sign-in-btn
+        display: flex
+        justify-content: center
+        align-items: center
+        font-weight: 700
+        line-height: 1.5
+        background-color: $primary
+        color: white
+        border-radius: 1rem
+        padding-block: 12px
+        margin-top: 25px
+        margin-bottom: 30px

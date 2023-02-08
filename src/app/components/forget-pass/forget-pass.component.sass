@@ -1,0 +1,59 @@
+@import "src/assets/color"
+
+.forgetpass
+  width: 100vw
+  height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+  .forget-body
+    width: 575px
+    border: 0.5px solid $gray-5
+    box-shadow: 0px 20px 60px -6px rgba(0, 0, 0, 0.08)
+    padding: 70px 10px
+    .title
+      text-align: center
+      h1
+        font-weight: 700
+        font-size: 40px
+        line-height: 1.5
+        margin-bottom: 15px
+      span
+        color: $gray-3
+        font-size: 14px
+        line-height: 20px
+    .forms
+      margin-inline: 60px
+      margin-top: 50px
+      .viaEmail, .viaSms
+        display: flex
+        align-items: center
+        border: 1px solid $gray-5
+        border-radius: 1rem
+        padding: 15px 0 15px 20px
+        margin-bottom: 25px
+        .icon
+          img
+            margin-right: 20px
+        .content
+          display: flex
+          flex-direction: column
+          width: 300px
+          a
+            color: $gray-1
+            font-weight: 500
+          span
+            color: $gray-4
+    .button
+      a
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: $primary
+        color: white
+        font-weight: 700
+        border-radius: 1rem
+        line-height: 1.5
+        padding-block: 12px
+        margin-inline: 60px
+        margin-top: 50px

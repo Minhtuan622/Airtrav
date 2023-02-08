@@ -1,0 +1,64 @@
+<div class="form-login">
+  <div class="form-body">
+    <div class="form-content">
+      <div class="form-title">
+        <h1>Get’s started</h1>
+        <p>Don’t have an account? <a href="#">sign up</a></p>
+      </div>
+      <div class="form-signin">
+        <div class="facebook">
+          <img src="assets/facebook.png" alt="facebook icon">
+        </div>
+        <div class="google">
+          <img src="assets/google.png" alt="google icon">
+        </div>
+        <div class="twitter">
+          <img src="assets/twitter.png" alt="twitter icon">
+        </div>
+      </div>
+      <div class="form-subtitle">
+        <p>or login with email</p>
+      </div>
+      <form>
+        <!--<mat-form-field appearance="outline">
+          <mat-label>Enter your email</mat-label>
+          <input matInput placeholder="pat@example.com" [formControl]="email" required>
+          <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Enter your password</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'">
+        </mat-form-field>-->
+        <mat-form-field appearance="outline">
+          <mat-label>Your First name</mat-label>
+          <input matInput placeholder="Mitchel" [formControl]="firstName" required>
+          <mat-error *ngIf="firstName.invalid">{{getErrorFN()}}</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Your Last name</mat-label>
+          <input matInput placeholder="Smith" [formControl]="lastName" required>
+          <mat-error *ngIf="lastName.invalid">{{getErrorLN()}}</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Enter your email</mat-label>
+          <input matInput placeholder="pat@example.com" [formControl]="email" required>
+          <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Enter your password</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'">
+        </mat-form-field>
+
+        <div class="form-footer">
+          <div class="remember-me">
+            <mat-checkbox color="primary" formControlName="remember">Remember me</mat-checkbox>
+          </div>
+          <div class="forgot-pass">
+            <a routerLink="/forgetpass" routerLinkActive="active">Forgot your password?</a>
+          </div>
+        </div>
+      </form>
+      <a mat-button class="sign-in-btn" href="#">sign in</a>
+    </div>
+  </div>
+</div>

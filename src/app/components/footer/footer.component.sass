@@ -1,0 +1,59 @@
+@import "src/assets/color"
+mat-toolbar
+  height: auto
+  display: flex
+  justify-content: center
+  align-items: center
+  position: absolute
+  bottom: 0
+  padding-block: 70px
+  .body
+    width: 1100px
+    .header
+      display: flex
+      justify-content: space-between
+      align-items: center
+      .left
+        width: 270px
+        .logo
+          display: flex
+          align-items: center
+          margin-bottom: 40px
+          a
+            margin-left: 10px
+            font-weight: 800
+            font-size: 20px
+            color: $gray-2
+        .content
+          width: 270px
+          p
+            font-size: 16px
+            color: $gray-2
+            margin-bottom: 30px
+          .contact
+            border: 1px solid $gray-5
+            background-color: white
+            display: flex
+            height: 50px
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            border-radius: 10rem
+            input
+              outline: none
+              border: none
+              margin: 13px 0 13px 25px
+            img
+              margin-left: 5px
+      .service, .support, .business
+        h3
+          padding-left: 16px
+    .footer
+      display: flex
+      justify-content: space-between
+      span
+        color: $gray-4
+        font-size: 14px
+        line-height: 20px
+      .links img
+        padding-inline: 5px

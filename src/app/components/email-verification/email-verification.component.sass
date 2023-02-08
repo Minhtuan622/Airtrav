@@ -1,0 +1,70 @@
+@import "src/assets/color"
+@mixin normal-text
+
+.verify
+  width: 100vw
+  height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+  .verify-body
+    width: 600px
+    display: flex
+    flex-direction: column
+    align-items: center
+    border: 0.5px solid $gray-5
+    box-shadow: 0px 20px 60px -6px rgba(0, 0, 0, 0.08)
+    padding: 70px 10px
+    .title
+      text-align: center
+      margin-bottom: 40px
+      h1
+        font-weight: 700
+        font-size: 40px
+        line-height: 1.5
+      span
+        color: $gray-3
+        font-size: 14px
+        line-height: 20px
+    .body
+      width: 460px
+      .sub-title
+        text-align: center
+        span
+          color: $gray-3
+          font-size: 14px
+          line-height: 20px
+      .enternum
+        text-align: center
+        margin-block: 30px
+        input
+          outline: none
+          border: none
+          border-bottom: 2px solid $primary
+          margin-inline: 15px
+          width: 40px
+          padding-bottom: 5px
+          text-align: center
+          font-size: 30px
+        //input[type=number]::-webkit-inner-spin-button,
+        //input[type=number]::-webkit-outer-spin-button
+        //  -webkit-appearance: none
+        //  margin: 0
+      .button
+        a
+          display: flex
+          justify-content: center
+          align-items: center
+          background-color: $primary
+          color: white
+          border-radius: 1rem
+          padding-block: 10px
+          margin-block: 20px
+      .footer
+        color: $c4
+        font-size: 16px
+        line-height: 2
+        font-weight: bold
+        text-align: center
+        span a
+          font-weight: bold
