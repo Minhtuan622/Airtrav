@@ -21,6 +21,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import {MatListModule} from '@angular/material/list';
 import { CreateTripComponent } from './pages/create-trip/create-trip.component';
 import {MatDatepickerModule} from "@angular/material/datepicker";
+import {MatDialogModule} from "@angular/material/dialog";
+import { ThingsToDoComponent } from './pages/things-to-do/things-to-do.component';
+import { TravelGuideComponent } from './pages/travel-guide/travel-guide.component';
+import { ToursComponent } from './pages/tours/tours.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +36,10 @@ import {MatDatepickerModule} from "@angular/material/datepicker";
     ForgetPassComponent,
     EmailVerificationComponent,
     FooterComponent,
-    CreateTripComponent
+    CreateTripComponent,
+    ThingsToDoComponent,
+    TravelGuideComponent,
+    ToursComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,7 +53,8 @@ import {MatDatepickerModule} from "@angular/material/datepicker";
     MatButtonModule,
     MatToolbarModule,
     MatListModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
+import {MatDialog} from "@angular/material/dialog";
 
 @Component({
   selector: 'app-create-trip',
@@ -12,8 +13,14 @@ export class CreateTripComponent implements OnInit {
   public checkin = new FormControl('', [Validators.required])
   public checkout = new FormControl('', [Validators.required])
 
-  constructor() {}
+  constructor(public dialog: MatDialog) {}
   ngOnInit(): void {}
+
+  public openDialog(){
+    const dialog = this.dialog.open(CreateTripComponent)
+
+    dialog.afterClosed().subscribe(result => console.log('Dialog result: ${result}'))
+  }
 
   public getErrorLoc(){
     return this.location.hasError('required') ? 'Please enter your location' : ''
@@ -27,5 +34,4 @@ export class CreateTripComponent implements OnInit {
   public getErrorOut(){
     return this.location.hasError('required') ? 'Please enter your checkout' : ''
   }
-
 }

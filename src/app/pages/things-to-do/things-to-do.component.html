@@ -1,0 +1,55 @@
+<section>
+    <div class="content">
+      <div class="search-sidebar">
+        <div class="search">
+          <div class="head">
+            <mat-form-field appearance="outline">
+              <mat-label>Search location or property</mat-label>
+              <input matInput placeholder="Search location or property">
+              <mat-icon matSuffix>search</mat-icon>
+            </mat-form-field>
+            <mat-selection-list>
+              <mat-list-option *ngFor="let i of option">{{i}}</mat-list-option>
+            </mat-selection-list>
+          </div>
+          <div class="activity">
+            <h3>Activity type</h3>
+            <mat-selection-list>
+              <mat-list-option *ngFor="let i of activity_type">{{i}}</mat-list-option>
+            </mat-selection-list>
+          </div>
+        </div>
+      </div>
+      <div class="things-card">
+        <div class="card-content">
+          <div class="side-bar">
+            <div class="card" *ngFor="let i of card">
+              <img src="{{i.img}}">
+              <div class="card-content2">
+                <div class="card-head">
+                  <div class="card-title">
+                    <div class="title">
+                      <h2>{{i.name}}</h2>
+                      <div class="rating">
+                        <p>❤️ {{i.star}} ({{i.reviews}} reviews) Tour</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content2">
+                    <p>{{i.info}}</p>
+                  </div>
+                </div>
+                <div class="card-btn">
+                  <a mat-button href="#">Add</a>
+                  <p>Price: {{i.price}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-btn">
+      <a mat-button href="#">Explore All</a>
+    </div>
+</section>
