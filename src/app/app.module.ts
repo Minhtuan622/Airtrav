@@ -25,6 +25,7 @@ import {MatDialogModule} from "@angular/material/dialog";
 import { ThingsToDoComponent } from './pages/things-to-do/things-to-do.component';
 import { TravelGuideComponent } from './pages/travel-guide/travel-guide.component';
 import { ToursComponent } from './pages/tours/tours.component';
+import { HomeContentComponent } from './components/home-content/home-content.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { ToursComponent } from './pages/tours/tours.component';
     ThingsToDoComponent,
     TravelGuideComponent,
     ToursComponent,
+    HomeContentComponent,
   ],
   imports: [
     BrowserModule,

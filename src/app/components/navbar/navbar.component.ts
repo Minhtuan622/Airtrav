@@ -6,7 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.sass']
 })
 export class NavbarComponent implements OnInit {
-
+  public navigate= [
+    {
+      link: 'thingstodo',
+      text: "Things to do"
+    },
+    {
+      link: 'guide',
+      text: "Travel Guide"
+    },
+    {
+      link: 'tours',
+      text: 'Tours'
+    }
+  ]
   constructor() { }
 
   ngOnInit(): void {

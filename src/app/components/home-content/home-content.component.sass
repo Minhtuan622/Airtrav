@@ -1,0 +1,284 @@
+@import "src/assets/color"
+
+section
+  .container
+    .banner
+      display: flex
+      justify-content: space-between
+      .left
+        width: 500px
+        margin-left: 135px
+        margin-top: 30px
+        .head
+          position: relative
+          .title
+            h1
+              font-weight: 800
+              font-size: 64px
+              line-height: 77px
+              color: $gray-2
+              span
+                color: #F5B318
+                font-weight: 800
+                font-size: 64px
+                line-height: 77px
+            p
+              font-weight: 500
+              font-size: 18px
+              line-height: 28px
+              color: $gray-3
+              margin-top: 30px
+              margin-bottom: 50px
+          .input
+            width: 320px
+            margin-bottom: 70px
+            box-shadow: -16px 22px 42px rgba(0, 31, 77, 0.12)
+            border-radius: 1rem
+            input
+              width: 70%
+              outline: none
+              border: none
+              font-weight: 700
+              font-size: 20px
+              line-height: 24px
+              color: $gray-1
+              margin: 15px 10px 15px 25px
+          .review
+            width: 280px
+            span
+              font-weight: 500
+              font-size: 16px
+              line-height: 24px
+              color: $gray-3
+            .review-content
+              display: flex
+              justify-content: space-between
+              margin-top: 10px
+              .rating
+                p
+                  font-weight: 500
+                  font-size: 24px
+                  color: $main-black
+              .score
+                p
+                  font-weight: 700
+                  font-size: 24px
+                  color: $primary
+                span
+                  font-weight: 500
+                  font-size: 12px
+                  line-height: 15px
+                  color: $gray-4
+          img.vector
+            position: absolute
+            bottom: 65px
+            left: -150px
+            transform: rotate(-10deg)
+    .partner
+      background-color: $gray-7
+      display: flex
+      justify-content: space-evenly
+      align-items: center
+      margin: 0 auto
+      padding-block: 70px
+    .innovative
+      .title
+        margin: 0 auto 50px
+        width: 460px
+        text-align: center
+        h2
+          font-weight: 700
+          font-size: 40px
+          line-height: 1.5
+          color: $gray-1
+          margin-bottom: 25px
+          margin-top: 70px
+        p
+          font-size: 18px
+        line-height: 32px
+        color: $gray-2
+      .cards
+        margin: 0 auto 70px
+        width: 880px
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        gap: 30px
+        .card:nth-child(1)
+          background-color: $secondary-green-10
+        .card:nth-child(2)
+          background-color: $secondary-orange-10
+        .card:nth-child(3)
+          background-color: $primary-blue-10
+        .card
+          border-radius: 1rem
+          .body
+            padding: 20px 35px
+            .content
+              text-align: center
+              p
+                font-weight: 500
+                font-size: 17px
+                line-height: 26px
+                color: $gray-2
+                margin-top: 16px
+                margin-bottom: 30px
+            .link
+              width: 100%
+              display: flex
+              justify-content: center
+              align-items: center
+              a
+                color: $gray-2
+                font-weight: 500
+                font-size: 12px
+    .create-trip
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-bottom: 70px
+      img.left
+        margin-right: 100px
+      .content
+        width: 570px
+        .head
+          h2
+            font-weight: 700
+            font-size: 40px
+            line-height: 60px
+            color: $gray-1
+          p
+            font-weight: 500
+            font-size: 14px
+            line-height: 1.5
+            color: $gray-2
+            margin-bottom: 30px
+          ul
+            list-style: none
+          ul li
+            font-weight: 700
+            font-size: 16px
+            margin-block: 10px
+            line-height: 24px
+            color: $gray-2
+          ul li:before
+            content: "\20D8"
+            color: $primary
+            display: inline-block
+            width: 1em
+        hr
+          border: 1px dashed $gray-3
+          margin-top: 25px
+          margin-bottom: 20px
+        .foot
+          i
+            font-size: 16px
+            line-height: 24px
+            color: $gray-2
+          .acc
+            margin-top: 50px
+            display: flex
+            img
+              border-radius: 50%
+              margin-right: 15px
+            .body
+              display: flex
+              flex-direction: column
+              justify-content: center
+              p
+                font-weight: 700
+                font-size: 18px
+              span
+                font-size: 18px
+                color: $gray-3
+    .booking
+      background-color: #EAF0FF
+      .content
+        width: 1170px
+        display: flex
+        justify-content: space-between
+        margin: 0 auto
+        padding-block: 70px
+        .left
+          width: 680px
+          .head
+            width: 530px
+            h2
+              font-weight: 700
+              font-size: 40px
+              line-height: 1.5
+              color: $gray-1
+            p
+              font-size: 16px
+              line-height: 24px
+              color: $gray-2
+          .cards
+            display: grid
+            grid-template-columns: repeat(4, 1fr)
+            gap: 30px
+            .card
+              width: 155px
+              box-shadow: 0px 2.21277px 8.85106px rgba(15, 15, 15, 0.08)
+              border: 1px solid $gray-6
+              border-radius: 1rem
+              margin-top: 70px
+              background-color: white
+              .card-content
+                padding: 15px
+                img
+                  border-radius: 50%
+                  margin-bottom: 10px
+                .body
+                  h3
+                    font-weight: 600
+                    font-size: 14px
+                    line-height: 17px
+                    color: $gray-2
+                  span
+                    font-weight: 500
+                    font-size: 11px
+                    line-height: 17px
+                    color: $gray-3
+                    margin-top: 10px
+    .howitworks
+      display: flex
+      align-items: center
+      .body
+        .title
+          margin-bottom: 40px
+          h2
+            font-weight: 700
+            font-size: 40px
+            line-height: 1.5
+            color: $gray-1
+            margin-bottom: 24px
+          p
+            font-size: 18px
+            line-height: 32px
+            color: $gray-2
+        .card-works
+          width: 380px
+          display: grid
+          grid-template-columns: 1fr
+          gap: 30px
+          .works
+            display: flex
+            .img
+              width: 60px
+              height: 60px
+              box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.12)
+              border-radius: 50%
+              margin-right: 25px
+              display: flex
+              justify-content: center
+              align-items: center
+              .content
+                h3
+                  font-weight: 500
+                  font-size: 24px
+                  line-height: 36px
+                  color: $gray-2
+                  margin-bottom: 10px
+                span
+                  font-size: 16px
+                  line-height: 24px
+                  color: $gray-3

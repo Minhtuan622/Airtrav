@@ -1,0 +1,157 @@
+<section>
+  <div class="container">
+    <div class="banner">
+      <div class="left">
+        <div class="head">
+          <div class="title">
+            <h1>Travel Planning Made <span>Easy</span></h1>
+            <p>We make it easy to plan and book your next trip with a Day by Day itinerary.</p>
+          </div>
+          <div class="input">
+            <input type="text" placeholder="Plan a Trip">
+            <a mat-mini-fab routerLink="." color="primary">
+              <mat-icon>arrow_right_alt</mat-icon>
+            </a>
+          </div>
+          <div class="review">
+            <span>Our customers say</span>
+            <div class="review-content">
+              <div class="rating">
+                <p>Excellent</p>
+                <img src="assets/5%20star.png">
+              </div>
+              <div class="score">
+                <p>4.7</p>
+                <span>out of 5 on 194 reviews</span>
+              </div>
+            </div>
+          </div>
+          <img class="vector" src="assets/Vector%203.png">
+        </div>
+      </div>
+      <div class="right">
+        <img src="assets/home-banner.png">
+      </div>
+    </div>
+    <div class="partner">
+      <img *ngFor="let i of partner" src="{{i}}">
+    </div>
+    <div class="innovative">
+      <div class="title">
+        <h2>Innovative Trip Planning</h2>
+        <p>Our Vision is to revolutionize the way people travel by introducing intelligent trip planning</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="body">
+            <div class="content">
+              <img src="assets/btn-green.png">
+              <p>Partner allows you to browse multiple carriers for travel.</p>
+            </div>
+            <div class="link">
+              <a href="#">Learn more</a>
+              <mat-icon>arrow_right_alt</mat-icon>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="body">
+            <div class="content">
+              <img src="assets/btn-orange.png">
+              <p>Partner allows you to browse multiple carriers for travel.</p>
+            </div>
+            <div class="link">
+              <a href="#">Learn more</a>
+              <mat-icon>arrow_right_alt</mat-icon>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="body">
+            <div class="content">
+              <img src="assets/btn-blue.png">
+              <p>Partner allows you to browse multiple carriers for travel.</p>
+            </div>
+            <div class="link">
+              <a href="#">Learn more</a>
+              <mat-icon>arrow_right_alt</mat-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="create-trip">
+      <img class="left" src="assets/create%20trip.png">
+      <div class="content">
+        <div class="head">
+          <h2>Book Easy 3 Steps</h2>
+          <p>Planning a trip is sometimes not easy. But Trip Plan will help you to manage time
+            and budget for your journey! There are only 3 steps: Create an
+            account, choose your destination city.</p>
+          <ul>
+            <li>Set Up your Account</li>
+            <li>Respond to Private requests</li>
+            <li>Book your Trip</li>
+          </ul>
+        </div>
+        <hr>
+        <div class="foot">
+          <i>“Plan your trip with a 3-step trip plan. Check in out at a glance, select
+            hotel rooms on the go, and create a packing list”</i>
+          <div class="acc">
+            <img src="assets/medium-shot-happy-man-smiling.png">
+            <div class="body">
+              <p>Steve Jobs</p>
+              <span>Co-Founder and CEO</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="booking">
+      <div class="content">
+        <div class="left">
+          <div class="head">
+            <h2>Easy Trip Booking Website</h2>
+            <p>A new way to book travel online, saving you time. With trip, There are
+              no confusing spreadsheets or complicated searches. We just ask the
+              right questions, find the best deal for you, then book it.</p>
+          </div>
+          <div class="cards">
+            <div class="card" *ngFor="let i of trip_booking">
+              <div class="card-content">
+                <img src="{{i.img}}">
+                <div class="body">
+                  <h3>{{i.title}}</h3>
+                  <span>{{i.content}}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="assets/card-booking.png">
+      </div>
+    </div>
+    <div class="howitworks">
+      <img src="assets/how%20it%20works.png">
+      <div class="body">
+        <div class="title">
+          <h2>How does it works</h2>
+          <p>We find the absolute best prices on hotels & flights
+            then we pass these savings directly to you.</p>
+        </div>
+        <div class="card-works">
+          <div class="works" *ngFor="let i of works">
+            <div class="img">
+              <img src="{{i.img}}">
+            </div>
+            <div class="content">
+              <h3>{{i.title}}</h3>
+              <span>{{i.sub}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

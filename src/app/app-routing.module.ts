@@ -6,11 +6,12 @@ import {HomeComponent} from "./pages/home/home.component";
 import {ThingsToDoComponent} from "./pages/things-to-do/things-to-do.component";
 import {TravelGuideComponent} from "./pages/travel-guide/travel-guide.component";
 import {ToursComponent} from "./pages/tours/tours.component";
+import {HomeContentComponent} from "./components/home-content/home-content.component";
 
 const routes: Routes = [
   {path: 'forgetpass', component: ForgetPassComponent},
   {path: 'verify', component: EmailVerificationComponent},
-  {path: 'home', component: HomeComponent},
+  {path: '**', component: HomeContentComponent},
   {path: 'thingstodo', component: ThingsToDoComponent},
   {path: 'guide', component: TravelGuideComponent},
   {path: 'tours', component: ToursComponent}
