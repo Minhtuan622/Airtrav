@@ -1,0 +1,76 @@
+@import "src/assets/color"
+
+section
+  width: 100vw
+  .container
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin-top: 70px
+    .top, .tours, .luxury, .cultural
+      width: 1170px
+      h2
+        color: $gray-2
+        font-weight: 600
+        font-size: 30px
+        line-height: 1.5
+      .cards
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        gap: 30px
+        .card
+          box-shadow: 0px 12px 64px rgba(0, 0, 0, 0.06)
+          border-radius: 1rem
+          .img
+            position: relative
+            img
+              width: 380px
+              height: 280px
+              object-fit: cover
+              border-radius: 1rem
+            span
+              position: absolute
+              top: 20px
+              left: 20px
+              padding: 5px 15px
+              background-color: $gray-2
+              color: white
+              border-radius: 0.4rem
+          .body
+            margin: 20px
+            .title
+              margin-bottom: 20px
+              h3
+                color: $gray-1
+                font-weight: 500
+                font-size: 18px
+                line-height: 28px
+                margin-bottom: 10px
+                display: -webkit-box
+                -webkit-line-clamp: 2
+                -webkit-box-orient: vertical
+                overflow: hidden
+              .rating
+                color: $gray-2
+                font-weight: 500
+                font-size: 14px
+                line-height: 20px
+                display: flex
+                justify-content: space-between
+            .button
+              a
+                background-color: $primary
+                color: white
+                border-radius: 0.5rem
+  .footer
+    text-align: center
+    a
+      background-color: $primary
+      color: $gray-6
+      font-weight: 600
+      font-size: 24px
+      line-height: 36px
+      border-radius: 10rem
+      padding: 10px 35px
+      margin-block: 40px

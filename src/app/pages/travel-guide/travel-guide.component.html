@@ -1,1 +1,90 @@
-<p>travel-guide works!</p>
+<section>
+  <div class="container">
+    <div class="banner">
+      <div class="item">
+        <img src="assets/CRU%20Champagne%20Bar.png">
+        <div class="banner-content">
+          <div class="banner-title">
+            <div class="title">
+              <h2>Where in the world:</h2>
+              <span>Asia  /  Thailand  /  Bangkok</span>
+            </div>
+            <div class="rating">
+              <p>❤️ 4.8 <span>(122 reviews)</span></p>
+            </div>
+          </div>
+          <div class="banner-subtitle">
+            <span>Sacred & Religious Sites · Shopping Malls · Gift & Specialty Shops</span>
+          </div>
+          <div class="info">
+            <h3>City of Angels</h3>
+            <p>Enjoy cultural, historical, and culinary exploration during your holiday in Bangkok, the capital of Thailand and the most populous city in the country. With over 8 million residents, Bangkok remains a sprawling metropolitan</p>
+            <span>In your trip Sep 28 - Oct 1</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="slide-item">
+        <div class="item">
+          <div class="card" *ngFor="let i of tours">
+            <div class="img">
+              <div class="background"></div>
+              <img src="{{i.img}}">
+              <span>From ${{i.price}}</span>
+            </div>
+            <div class="body">
+              <div class="title">
+                <h3>{{i.name}}</h3>
+                <div class="rating">
+                  <span>❤️ {{i.star}} ({{i.reviews}} reviews)</span>
+                  <span>Duration: {{i.duration}} hours</span>
+                </div>
+              </div>
+              <div class="button">
+                <a mat-button href="#">Tours Price ${{i.cost}}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popular">
+      <h2>Popular things to do in Bangkok</h2>
+      <div class="popular-items">
+        <div class="item" *ngFor="let i of popular">
+          <div class="imgs">
+            <div class="background"></div>
+            <img src="{{i.img}}">
+            <span>Must see</span>
+          </div>
+          <div class="body">
+            <div class="title">
+              <time>Sep 28 10:00 AM - 1:00 PM</time>
+              <h3>{{i.name}}</h3>
+            </div>
+            <span>❤️ 4.8 (12 reviews)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="games">
+      <div class="game-container">
+        <h2>Hidden gems in Bangkok</h2>
+        <div class="body">
+          <div class="items" *ngFor="let i of games">
+            <div class="background"></div>
+            <img src="{{i.img}}">
+            <div class="item">
+              <h3>{{i.name}}</h3>
+              <time>{{i.time}}</time>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <a mat-button href="#">Explore All</a>
+    </div>
+  </div>
+</section>

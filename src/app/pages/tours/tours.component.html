@@ -1,1 +1,99 @@
-<p>tours works!</p>
+<section>
+  <div class="container">
+    <div class="top">
+      <h2>Top Bangkok tours</h2>
+      <div class="cards">
+        <div class="card" *ngFor="let i of top_tours">
+          <div class="img">
+            <img src="{{i.img}}">
+            <span>From ${{i.price}}</span>
+          </div>
+          <div class="body">
+            <div class="title">
+              <h3>{{i.name}}</h3>
+              <div class="rating">
+                <span>❤️ {{i.star}} ({{i.reviews}} reviews)</span>
+                <span>Duration: {{i.duration}} hours</span>
+              </div>
+            </div>
+            <div class="button">
+              <a mat-button href="#">Tours Price ${{i.cost}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tours">
+      <h2>Tours & Sightseeing</h2>
+      <div class="cards">
+        <div class="card" *ngFor="let i of tours">
+          <div class="img">
+            <img src="{{i.img}}">
+            <span>From ${{i.price}}</span>
+          </div>
+          <div class="body">
+            <div class="title">
+              <h3>{{i.name}}</h3>
+              <div class="rating">
+                <span>❤️ {{i.star}} ({{i.reviews}} reviews)</span>
+                <span>Duration: {{i.duration}} hours</span>
+              </div>
+            </div>
+            <div class="button">
+              <a mat-button href="#">Tours Price ${{i.cost}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="luxury">
+      <h2>Luxury & Special Occasions</h2>
+      <div class="cards">
+        <div class="card" *ngFor="let i of luxury">
+          <div class="img">
+            <img src="{{i.img}}">
+            <span>From ${{i.price}}</span>
+          </div>
+          <div class="body">
+            <div class="title">
+              <h3>{{i.name}}</h3>
+              <div class="rating">
+                <span>❤️ {{i.star}} ({{i.reviews}} reviews)</span>
+                <span>Duration: {{i.duration}} hours</span>
+              </div>
+            </div>
+            <div class="button">
+              <a mat-button href="#">Tours Price ${{i.cost}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cultural">
+      <h2>Cultural & Theme Tours</h2>
+      <div class="cards">
+        <div class="card" *ngFor="let i of cultural">
+          <div class="img">
+            <img src="{{i.img}}">
+            <span>From ${{i.price}}</span>
+          </div>
+          <div class="body">
+            <div class="title">
+              <h3>{{i.name}}</h3>
+              <div class="rating">
+                <span>❤️ {{i.star}} ({{i.reviews}} reviews)</span>
+                <span>Duration: {{i.duration}} hours</span>
+              </div>
+            </div>
+            <div class="button">
+              <a mat-button href="#">Tours Price ${{i.cost}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <a mat-button href="#">See all Tours</a>
+  </div>
+</section>
