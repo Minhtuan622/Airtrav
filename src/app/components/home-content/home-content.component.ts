@@ -61,6 +61,56 @@ export class HomeContentComponent implements OnInit {
       sub: 'Take your flight on selected date and joy'
     }
   ]
+
+  public services = [
+    {
+      img: 'assets/city.png',
+      title: '100,000',
+      sub: 'Cities all over the world'
+    },
+    {
+      img: 'assets/gift.png',
+      title: '100',
+      sub: 'Gift card over the world'
+    },
+    {
+      img: 'assets/guest.png',
+      title: '1000',
+      sub: 'Guest referrals over'
+    },
+    {
+      img: 'assets/star.png',
+      title: '5 Star',
+      sub: 'Reviews Customar '
+    },
+  ]
+
+  public feature = [
+    {
+      img: 'assets/feature1.png',
+      title: 'Share Your Travel Plan',
+      text: 'Ticket is an ultra-convenient way to buy your \n' +
+        'train or bus ticket online in seconds.'
+    },
+    {
+      img: 'assets/feature2.png',
+      title: 'Get Monthly Tour',
+      text: 'Our Get Monthly Tours marketing package will help\n' +
+        'get more clients in your photography business. '
+    },
+    {
+      img: 'assets/feature3.png',
+      title: 'Receive Ticket',
+      text: 'The Receive plan Ticket will allow you to travel freely.\n' +
+        'You will be able to get in any location.'
+    },
+    {
+      img: 'assets/feature4.png',
+      title: 'Flight Booking',
+      text: 'Flight Booking is an ultra-convenient way to buy your \n' +
+        'train or bus ticket online in seconds.'
+    }
+  ]
   constructor() { }
 
   ngOnInit(): void {

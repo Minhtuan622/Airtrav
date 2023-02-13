@@ -153,5 +153,43 @@
         </div>
       </div>
     </div>
+    <div class="services">
+      <div class="title">
+        <h2>Airtrav Best Services </h2>
+        <span>Love by airtrave all services and amazine trip booked plane</span>
+      </div>
+      <div class="cards">
+        <div class="card" *ngFor="let i of services">
+          <img src="{{i.img}}">
+          <div class="body">
+            <h3>{{i.title}}</h3>
+            <span>{{i.sub}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dicover">
+      <h2>Discover our Features</h2>
+      <div class="features">
+        <div class="feature" *ngFor="let i of feature">
+          <div class="title">
+            <img src="{{i.img}}">
+            <h3>{{i.title}}</h3>
+          </div>
+          <p>{{i.text}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="ready">
+      <div class="container">
+        <div class="body">
+          <h2>Ready for 14 days Trip Plan</h2>
+          <p>The secret of good trip planning is to plan in advance, and we
+            can't get much more advanced than 14 days. </p>
+          <a mat-button href="#">Go Plan</a>
+        </div>
+        <img src="assets/ready.png">
+      </div>
+    </div>
   </div>
 </section>
